@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="3FY-jc-8nD">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Drawing-->
+        <scene sceneID="D1u-3S-qOe">
+            <objects>
+                <viewController id="Ms1-Tt-n9J" customClass="DrawingViewController" customModule="Matviychuks__Project" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="OBZ-Sm-9ar">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="ftR-xz-buK"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Drawing" image="pencil.and.outline" catalog="system" id="LJy-tY-hbw"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="j3C-Je-ZHC" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="751" y="87"/>
+        </scene>
+        <!--Skull-->
+        <scene sceneID="YY4-ae-AOs">
+            <objects>
+                <viewController id="vnc-bz-sZX" customClass="ViewController" customModule="Matviychuks__Project" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="C4N-N8-Ha8">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ppz-vq-Cbp">
+                                <rect key="frame" x="136.5" y="417.5" width="141" height="61"/>
+                                <string key="text">Матвійчук Андрій
+Група ІВ-83
+ЗК ІВ-8320</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="RZF-sh-pgd"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="Ppz-vq-Cbp" firstAttribute="centerY" secondItem="C4N-N8-Ha8" secondAttribute="centerY" id="Ga6-5e-3rE"/>
+                            <constraint firstItem="Ppz-vq-Cbp" firstAttribute="centerX" secondItem="C4N-N8-Ha8" secondAttribute="centerX" id="zud-cG-iVz"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Skull" image="person" catalog="system" id="BOR-3T-Uyc"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ViM-yb-UvG" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="751" y="-520"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="eso-tJ-j8p">
+            <objects>
+                <tabBarController id="3FY-jc-8nD" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="jKC-Uy-M8r">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="vnc-bz-sZX" kind="relationship" relationship="viewControllers" id="AgH-xB-VbX"/>
+                        <segue destination="Ms1-Tt-n9J" kind="relationship" relationship="viewControllers" id="rUa-sz-uk2"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="qrT-kn-KZh" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-139" y="-216"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="pencil.and.outline" catalog="system" width="128" height="128"/>
+        <image name="person" catalog="system" width="128" height="117"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
